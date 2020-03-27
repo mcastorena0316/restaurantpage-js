@@ -1,0 +1,81 @@
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9em;
+  .navbar-brand {
+    img {
+     height: 170px;
+    }
+  }
+  .navbar-toggler {
+     margin-right: 1.5em;
+     font-size: 1.9em;
+  }
+  .collapse {
+    justify-content: end;
+    .navbar-sections {
+      a {
+        padding: 0 1.5em;  
+      }
+    }
+  }
+}
+
+.content {
+  .images-sections {
+    height: 800px;
+    display: flex;
+        .image {
+          background-size: cover;
+          background-position: center;
+          flex: 1;
+          color: white;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          font-size: 2.2em;
+          opacity:0.8;
+
+
+
+          // transition:
+            // font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            // flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            // background 0.2s;
+          p:nth-child(2) {
+            // display: none;
+            font-style: italic;
+            margin-top: 1em;
+            padding-left: 8em;
+          }
+       
+        }
+
+        .image1 { 
+          background-image:url(images/grill1.jpg); 
+        }
+
+        .image2 {
+          background-image: url(images/grill2.jpg);
+        }
+
+        .image3 {
+          background-image: url(images/grill3.jpg);
+        }
+
+        .image4{
+          background-image: url(images/grill4.jpg)
+        }
+  }
+}
+
+footer {
+  background-color: rgb(247, 238, 238);
+  font-size: 1.9em;
+  display: flex;
+  justify-content: center;
+  p {
+    margin-top: 1em;
+  }
+}
