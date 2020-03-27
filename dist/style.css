@@ -54,6 +54,10 @@
   opacity: 0.8;
 }
 
+.content .images-sections .image p {
+  display: none;
+}
+
 .content .images-sections .image p:nth-child(2) {
   font-style: italic;
   margin-top: 1em;
