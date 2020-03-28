@@ -1,6 +1,6 @@
 function header() {
   const navbar = document.createElement('nav');
-  navbar.innerHTML = ` <a class="navbar-brand" href="#">
+  navbar.innerHTML = ` <a class="navbar-brand" id="logo-navbar" href="#">
                         <img src="images/beesley.png" alt="logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +8,7 @@ function header() {
                         </button>
                         <div class="collapse navbar-collapse ">
                             <div class="navbar-nav navbar-sections" >
-                            <a class="nav-item nav-link active" href="#">Menu <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link active" id="menu-navbar" href="#">Menu</a>
                             <a class="nav-item nav-link" href="#">Locations</a>
                             <a class="nav-item nav-link" href="#">Our Story</a>
                             <a class="nav-item nav-link" href="#">Contact Us</a>
