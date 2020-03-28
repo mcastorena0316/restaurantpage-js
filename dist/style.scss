@@ -34,22 +34,40 @@
           justify-content: center;
           display: flex;
           flex-direction: column;
-          font-size: 2.2em;
-          opacity:0.8;
+          font-size: 3.5em;
+          font-style: bold;
+          opacity:0.5;
        
+
+         
           // transition:
-            // font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-            // flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-            // background 0.2s;
+          //   font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+          //   flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+          //   background 0.2s;
           p {
+            margin:0;
+            padding: 5px;
             display: none;
+            width: 80%;
+            font-style: italic;
           }
           p:nth-child(2) {
             font-style: italic;
-            margin-top: 1em;
-            padding-left: 8em;
+            margin-top: 0;
+            padding-left: 5em;
           }
         }
+
+        .open-img {
+          flex: 4;
+          opacity:0.9 !important;
+          p {
+            display: block;
+            background-color: rgb(49, 49, 49);
+            border-radius: 5px;
+          }
+        }
+
         .image1 { 
           background-image:url(images/grill1.jpg); 
         }

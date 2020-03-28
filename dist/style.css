@@ -50,18 +50,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 2.2em;
-  opacity: 0.8;
+  font-size: 3.5em;
+  font-style: bold;
+  opacity: 0.5;
 }
 
 .content .images-sections .image p {
+  margin: 0;
+  padding: 5px;
   display: none;
+  width: 80%;
+  font-style: italic;
 }
 
 .content .images-sections .image p:nth-child(2) {
   font-style: italic;
-  margin-top: 1em;
-  padding-left: 8em;
+  margin-top: 0;
+  padding-left: 5em;
+}
+
+.content .images-sections .open-img {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  opacity: 0.9 !important;
+}
+
+.content .images-sections .open-img p {
+  display: block;
+  background-color: #313131;
+  border-radius: 5px;
 }
 
 .content .images-sections .image1 {
