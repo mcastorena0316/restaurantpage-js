@@ -11,7 +11,7 @@ function header() {
                             <a class="nav-item nav-link active" id="menu-navbar" href="#">Menu</a>
                             <a class="nav-item nav-link" href="#">Locations</a>
                             <a class="nav-item nav-link" href="#">Our Story</a>
-                            <a class="nav-item nav-link" href="#">Contact Us</a>
+                            <a class="nav-item nav-link" id= "contact-navbar"href="#">Contact Us</a>
                             </div>
                         </div>`;
   navbar.className = 'navbar navbar-expand-lg navbar-light bg-light ';

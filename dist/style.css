@@ -23,7 +23,7 @@
 }
 
 .content .images-sections {
-  height: 800px;
+  height: 793px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +108,77 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 770px 810px;
-  height: 800px;
+  height: 793px;
+}
+
+.content .form-section {
+  display: none;
+  background: #fff;
+  height: 793px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .form-section .form-sent {
+  display: none;
+  background: #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 3%;
+  text-align: center;
+  margin: 1em;
+  font-size: 1.6em;
+}
+
+.content .form-section h3 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+.content .form-section form {
+  font-size: 1.3em;
+}
+
+.content .form-section form .row {
+  width: 100%;
+}
+
+.content .form-section form .row .section1-form .form-group {
+  padding-left: 3em;
+}
+
+.content .form-section form .row .section1-form .form-group .form-control {
+  width: 80%;
+  border-radius: .5em;
+  height: 3em;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
+
+.content .form-section form .row .section1-form .form-group .contact-button {
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 5.8em;
+  margin-top: 1.4em;
+}
+
+.content .form-section form .row .section2-form .form-group {
+  padding-right: 3em;
+}
+
+.content .form-section form .row .section2-form .form-group .form-control {
+  border-radius: .5em;
+  font-size: 1.3em;
+  height: 7em;
 }
 
 .content footer {
