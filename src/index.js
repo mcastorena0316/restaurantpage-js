@@ -6,15 +6,15 @@ import displayMenu from './menu';
 import contactSection from './contact';
 import locationSection from './location';
 
-
-const content = document.getElementById('content');
-content.appendChild(header());
-content.appendChild(imageSection());
-content.insertBefore(displayMenu(), content.lastChild);
-content.insertBefore(contactSection(), content.lastChild);
-content.insertBefore(locationSection(), content.lastChild);
-content.appendChild(footer());
-
+const newPage = () => {
+  const content = document.getElementById('content');
+  content.appendChild(header());
+  content.appendChild(imageSection());
+  content.insertBefore(displayMenu(), content.lastChild);
+  content.insertBefore(contactSection(), content.lastChild);
+  content.insertBefore(locationSection(), content.lastChild);
+  content.appendChild(footer());
+};
 
 const UI = () => {
   const showSection = (buttonToClick, sectionToDisplay) => {
@@ -72,6 +72,7 @@ const UI = () => {
   };
 };
 
+newPage();
 
 const ui = UI();
 ui.displayImage();
