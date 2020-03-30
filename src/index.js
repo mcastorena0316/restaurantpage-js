@@ -4,6 +4,7 @@ import header from './header';
 import imageSection from './images-section';
 import displayMenu from './menu';
 import contactSection from './contact';
+import locationSection from './location';
 
 
 const content = document.getElementById('content');
@@ -11,10 +12,27 @@ content.appendChild(header());
 content.appendChild(imageSection());
 content.insertBefore(displayMenu(), content.lastChild);
 content.insertBefore(contactSection(), content.lastChild);
+content.insertBefore(locationSection(), content.lastChild);
 content.appendChild(footer());
 
 
 const UI = () => {
+  const showSection = (buttonToClick, sectionToDisplay) => {
+    const allSections = document.querySelectorAll('.display-section');
+    const button = document.getElementById(buttonToClick);
+    button.addEventListener('click', (e) => {
+      for (let i = 0; i < allSections.length; i += 1) {
+        const id = allSections[i];
+        if (id.className.split(' ')[0] === sectionToDisplay) {
+          allSections[i].style.display = 'flex';
+        } else {
+          allSections[i].style.display = 'none';
+        }
+      }
+      e.preventDefault();
+    });
+  };
+
   const displayImage = () => {
     const images = document.querySelectorAll('.image');
 
@@ -33,41 +51,23 @@ const UI = () => {
   };
 
   const displayMenu = () => {
-    function showMenu() {
-      document.querySelector('.menu-section').style.display = 'block';
-      document.querySelector('.images-sections').style.display = 'none';
-      document.querySelector('.form-section').style.display = 'none';
-    }
+    showSection('menu-navbar', 'menu-section');
+  };
 
-    const menu = document.getElementById('menu-navbar');
-    menu.addEventListener('click', showMenu);
+  const displayLocation = () => {
+    showSection('location-navbar', 'location-section');
   };
 
   const displayContact = () => {
-    function showContactForm() {
-      document.querySelector('.form-section').style.display = 'flex';
-      document.querySelector('.images-sections').style.display = 'none';
-      document.querySelector('.menu-section').style.display = 'none';
-    }
-
-
-    const contact = document.getElementById('contact-navbar');
-    contact.addEventListener('click', showContactForm);
+    showSection('contact-navbar', 'form-section');
   };
 
   const returnToMainMenu = () => {
-    function backToImageSection() {
-      document.querySelector('.form-section').style.display = 'none';
-      document.querySelector('.menu-section').style.display = 'none';
-      document.querySelector('.images-sections').style.display = 'flex';
-    }
-
-    const menulogo = document.getElementById('logo-navbar');
-    menulogo.addEventListener('click', backToImageSection);
+    showSection('logo-navbar', 'images-sections');
   };
 
   return {
-    displayImage, displayMenu, returnToMainMenu, displayContact,
+    displayImage, displayMenu, returnToMainMenu, displayContact, displayLocation,
 
   };
 };
@@ -78,3 +78,4 @@ ui.displayImage();
 ui.displayMenu();
 ui.returnToMainMenu();
 ui.displayContact();
+ui.displayLocation();

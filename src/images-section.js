@@ -16,7 +16,7 @@ function imageSection() {
                                 <p>"I wrote my first hit song in a napkin when I was eating a hamburger in this place!</p>
                                 <p>-Lady Gaga</p>
                             </div>`;
-  imageSec.className = 'images-sections';
+  imageSec.className = 'images-sections display-section';
 
   return imageSec;
 }

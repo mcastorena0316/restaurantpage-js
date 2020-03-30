@@ -9,8 +9,7 @@ function header() {
                         <div class="collapse navbar-collapse ">
                             <div class="navbar-nav navbar-sections" >
                             <a class="nav-item nav-link active" id="menu-navbar" href="#">Menu</a>
-                            <a class="nav-item nav-link" href="#">Locations</a>
-                            <a class="nav-item nav-link" href="#">Our Story</a>
+                            <a class="nav-item nav-link" id= "location-navbar" href="#">Locations</a>
                             <a class="nav-item nav-link" id= "contact-navbar"href="#">Contact Us</a>
                             </div>
                         </div>`;

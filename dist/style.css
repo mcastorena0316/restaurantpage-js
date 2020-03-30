@@ -1,29 +1,33 @@
-.navbar {
+.content .navbar {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.9em;
+  font-size: 1em;
 }
 
-.navbar .navbar-brand img {
-  height: 170px;
+.content .navbar .navbar-brand {
+  padding: 0;
 }
 
-.navbar .navbar-toggler {
+.content .navbar .navbar-brand img {
+  height: 79px;
+}
+
+.content .navbar .navbar-toggler {
   margin-right: 1.5em;
   font-size: 1.9em;
 }
 
-.navbar .collapse {
+.content .navbar .collapse {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
 
-.navbar .collapse .navbar-sections a {
+.content .navbar .collapse .navbar-sections a {
   padding: 0 1.5em;
 }
 
 .content .images-sections {
-  height: 793px;
+  height: 399px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +54,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 3.5em;
+  font-size: 1.5em;
   font-style: bold;
   opacity: 0.5;
 }
@@ -107,14 +111,55 @@
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 770px 810px;
-  height: 793px;
+  background-size: 321px;
+  height: 399px;
+  width: 100%;
+}
+
+.content .location-section {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .location-section .title-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .location-section .title-location .pin-img {
+  height: 30px;
+  margin-right: .5em;
+}
+
+.content .location-section .title-location h4 {
+  margin-top: 1em;
+}
+
+.content .location-section p {
+  margin-bottom: 0;
+}
+
+.content .location-section p:nth-child(3) {
+  margin-bottom: 1em;
 }
 
 .content .form-section {
   display: none;
   background: #fff;
-  height: 793px;
+  height: 399px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -136,12 +181,12 @@
 
 .content .form-section h3 {
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 2em;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .content .form-section form {
-  font-size: 1.3em;
+  font-size: .7em;
 }
 
 .content .form-section form .row {
@@ -183,7 +228,7 @@
 
 .content footer {
   background-color: #f7eeee;
-  font-size: 1.9em;
+  font-size: 0.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

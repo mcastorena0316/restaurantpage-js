@@ -26,7 +26,7 @@ function contactSection() {
                             </div>
                         </div>
                     </form>`;
-  formContact.className = 'form-section';
+  formContact.className = 'form-section display-section';
   return formContact;
 }
 
