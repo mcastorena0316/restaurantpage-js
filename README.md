@@ -13,7 +13,7 @@
 
 In this project, I was requested to create a Restaurant Page using Webpack and  Javascript's modules for creating the HTML content.
 
-Live version of the project: [Live version](https://raw.githack.com/mcastorena0316/restaurantpage-js/homepagelogic/dist/index.html)
+Live version of the project: [Live version](https://rawcdn.githack.com/mcastorena0316/restaurantpage-js/4df14b90b82c44a10811aa1ae0dc997492b0216a/dist/index.html)
 
 Project Link: [RESTAURANTPAGE-JS](https://github.com/mcastorena0316/restaurantpage-js)
 
