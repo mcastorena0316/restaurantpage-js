@@ -1,16 +1,18 @@
 .content {
+  height:100vh;
   .navbar {
+    height: 15%;
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
     .navbar-brand {
       padding:0;
       img {
-     height: 79px;
+     height: 69px;
       }
     }
     .navbar-toggler {
       margin-right: 1.5em;
-      font-size: 1.9em;
+      font-size: 1.1em;
     }
     .collapse {
       justify-content: end;
@@ -22,7 +24,7 @@
     }
   }
   .images-sections {
-    height: 399px;
+    height: 74%;
     display: flex;
     .image {
       background-size: cover;
@@ -76,13 +78,14 @@
   }
   .menu-section {
     display: none;
+    height:74%;
     .menu-info {
       background-image: url(images/menu.jpg);
       background-size: auto;
       background-position: center;
       background-repeat: no-repeat;
       background-size: 321px;
-      height:399px;
+      height:100%;
       width: 100%;
     }
   }
@@ -92,6 +95,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:74%;
 
     .title-location{
       display:flex;
@@ -118,7 +122,7 @@
   .form-section {
     display: none;
     background: #fff;
-    height:399px;
+    height:74%;
     flex-direction: column;
     justify-content: center;
 
@@ -180,6 +184,7 @@
   }
 
   footer {
+    height:11%;
     background-color: rgb(247, 238, 238);
     font-size: 0.8em;
     display: flex;
