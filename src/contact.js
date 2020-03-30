@@ -1,9 +1,8 @@
 function contactSection() {
   const formContact = document.createElement('div');
-  formContact.innerHTML = `  <div id= "form-sent" class="form-sent">
-                             </div>
+  formContact.innerHTML = `
                             <h3>Drop Us a Message</h3>
-                            <form method="post">
+                            <form>
                               <div class="row">
                                 <div class="col-md-6 section1-form">
                                     <div class="form-group">
@@ -16,14 +15,14 @@ function contactSection() {
                                         <input type="tel"  class="form-control" placeholder="Your Phone Number *"/>
                                     </div>
                                     <div class="form-group">
-                                        <input type="submit"  class="contact-button" value="Send Message" />
+                                        <input type="submit"  class="contact-button" id="contact-button" value="Send Message" />
                                     </div>
                                 </div>
                                  <div class="col-md-6 section2-form">
                                     <div class="form-group">
                                         <textarea name="txtMsg" class="form-control" placeholder="Your Message *" required></textarea>
                                     </div>
-                            </div>
+                                </div>
                         </div>
                     </form>`;
   formContact.className = 'form-section display-section';
