@@ -11,7 +11,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-In this project, I was requested to create a Restaurant Page using Webpack and   Javascript's modules for creating the HTML.
+In this project, I was requested to create a Restaurant Page using Webpack and  Javascript's modules for creating the HTML content.
 
 Live version of the project: [Live version](https://raw.githack.com/mcastorena0316/restaurantpage-js/homepagelogic/dist/index.html)
 
