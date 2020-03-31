@@ -1,0 +1,242 @@
+header .navbar {
+  height: 15%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+}
+
+header .navbar .navbar-brand {
+  padding: 0;
+}
+
+header .navbar .navbar-brand img {
+  height: 69px;
+}
+
+header .navbar .navbar-toggler {
+  margin-right: 1.5em;
+  font-size: 1.1em;
+}
+
+header .navbar .collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header .navbar .collapse .navbar-sections a {
+  padding: 0 1.5em;
+}
+
+.content {
+  height: 84vh;
+}
+
+.content .display-section {
+  height: 89%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .images-sections .image {
+  background-size: cover;
+  background-position: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5em;
+  font-style: bold;
+  opacity: 0.5;
+}
+
+.content .images-sections .image p {
+  margin: 0;
+  padding: 5px;
+  display: none;
+  width: 80%;
+  font-style: italic;
+}
+
+.content .images-sections .image p:nth-child(2) {
+  font-style: italic;
+  margin-top: 0;
+  padding-left: 5em;
+}
+
+.content .images-sections .open-img {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  opacity: 0.9 !important;
+}
+
+.content .images-sections .open-img p {
+  display: block;
+  background-color: #313131;
+  border-radius: 5px;
+}
+
+.content .images-sections .image1 {
+  background-image: url(images/grill1.jpg);
+}
+
+.content .images-sections .image2 {
+  background-image: url(images/grill2.jpg);
+}
+
+.content .images-sections .image3 {
+  background-image: url(images/grill3.jpg);
+}
+
+.content .images-sections .image4 {
+  background-image: url(images/grill4.jpg);
+}
+
+.content .menu-section .menu-info {
+  background-image: url(images/menu.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 321px;
+  height: 100%;
+  width: 100%;
+}
+
+.content .location-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .location-section .title-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .location-section .title-location .pin-img {
+  height: 30px;
+  margin-right: .5em;
+}
+
+.content .location-section .title-location h4 {
+  margin-top: 1em;
+}
+
+.content .location-section p {
+  margin-bottom: 0;
+}
+
+.content .location-section p:nth-child(3) {
+  margin-bottom: 1em;
+}
+
+.content .form-section {
+  background: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .form-section .form-sent {
+  display: none;
+  background: #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 3%;
+  text-align: center;
+  margin: 1em;
+  font-size: 1.6em;
+}
+
+.content .form-section h3 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.content .form-section form {
+  font-size: .7em;
+}
+
+.content .form-section form .row {
+  width: 100%;
+}
+
+.content .form-section form .row .section1-form .form-group {
+  padding-left: 3em;
+}
+
+.content .form-section form .row .section1-form .form-group .form-control {
+  width: 80%;
+  border-radius: .5em;
+  height: 3em;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
+
+.content .form-section form .row .section1-form .form-group .contact-button {
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 5.8em;
+  margin-top: 1.4em;
+}
+
+.content .form-section form .row .section2-form .form-group {
+  padding-right: 3em;
+}
+
+.content .form-section form .row .section2-form .form-group .form-control {
+  border-radius: .5em;
+  font-size: 1.3em;
+  height: 7em;
+}
+
+.content footer {
+  height: 11%;
+  background-color: #f7eeee;
+  font-size: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content footer p {
+  margin-top: 1em;
+}
+/*# sourceMappingURL=style.css.map */
