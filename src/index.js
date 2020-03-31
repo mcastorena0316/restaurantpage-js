@@ -6,29 +6,22 @@ import displayMenu from './menu';
 import contactSection from './contact';
 import locationSection from './location';
 
-const newPage = () => {
-  const content = document.getElementById('content');
-  content.appendChild(header());
-  content.appendChild(imageSection());
-  content.insertBefore(displayMenu(), content.lastChild);
-  content.insertBefore(contactSection(), content.lastChild);
-  content.insertBefore(locationSection(), content.lastChild);
-  content.appendChild(footer());
-};
+
+const header1 = document.getElementsByTagName('header')[0];
+const content = document.getElementById('content');
+header1.appendChild(header());
+content.appendChild(imageSection());
+content.appendChild(footer());
+
 
 const UI = () => {
   const showSection = (buttonToClick, sectionToDisplay) => {
-    const allSections = document.querySelectorAll('.display-section');
     const button = document.getElementById(buttonToClick);
     button.addEventListener('click', (e) => {
-      for (let i = 0; i < allSections.length; i += 1) {
-        const id = allSections[i];
-        if (id.className.split(' ')[0] === sectionToDisplay) {
-          allSections[i].style.display = 'flex';
-        } else {
-          allSections[i].style.display = 'none';
-        }
-      }
+      const sectionToRemove = document.querySelector('.display-section');
+      sectionToRemove.remove();
+      const section = content.insertBefore(sectionToDisplay, content.lastChild);
+      section.classList.add('display-section');
       e.preventDefault();
     });
   };
@@ -50,33 +43,31 @@ const UI = () => {
     images.forEach(image => image.addEventListener('click', biggerImageandText));
   };
 
-  const displayMenu = () => {
-    showSection('menu-navbar', 'menu-section');
+  const displayTheMenu = () => {
+    showSection('menu-navbar', displayMenu());
   };
 
-  const displayLocation = () => {
-    showSection('location-navbar', 'location-section');
+  const displayTheLocation = () => {
+    showSection('location-navbar', locationSection());
   };
 
-  const displayContact = () => {
-    showSection('contact-navbar', 'form-section');
+  const displayTheContact = () => {
+    showSection('contact-navbar', contactSection());
   };
 
   const returnToMainMenu = () => {
-    showSection('logo-navbar', 'images-sections');
+    showSection('logo-navbar', imageSection());
   };
 
   return {
-    displayImage, displayMenu, returnToMainMenu, displayContact, displayLocation,
+    displayImage, displayTheMenu, returnToMainMenu, displayTheContact, displayTheLocation,
 
   };
 };
 
-newPage();
-
 const ui = UI();
 ui.displayImage();
-ui.displayMenu();
+ui.displayTheMenu();
 ui.returnToMainMenu();
-ui.displayContact();
-ui.displayLocation();
+ui.displayTheContact();
+ui.displayTheLocation();

@@ -1,5 +1,4 @@
-.content {
-  height:100vh;
+header {
   .navbar {
     height: 15%;
     font-family: 'Poppins', sans-serif;
@@ -23,9 +22,17 @@
       }
     }
   }
-  .images-sections {
-    height: 74%;
+}
+
+.content {
+  height:84vh;
+ 
+  .display-section {
+    height: 89%;
     display: flex;
+  }
+
+  .images-sections {
     .image {
       background-size: cover;
       background-position: center;
@@ -77,8 +84,6 @@
     }
   }
   .menu-section {
-    display: none;
-    height:74%;
     .menu-info {
       background-image: url(images/menu.jpg);
       background-size: auto;
@@ -91,12 +96,9 @@
   }
 
   .location-section {
-    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:74%;
-
     .title-location{
       display:flex;
       align-items: center;
@@ -120,9 +122,7 @@
   }
 
   .form-section {
-    display: none;
     background: #fff;
-    height:74%;
     flex-direction: column;
     justify-content: center;
 

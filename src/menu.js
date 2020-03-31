@@ -2,7 +2,7 @@ function displayMenu() {
   const menu = document.createElement('div');
   menu.innerHTML = `<div class="menu-info image" id="menu-info">
                     </div>`;
-  menu.className = 'menu-section display-section';
+  menu.className = 'menu-section';
   return menu;
 }
 
